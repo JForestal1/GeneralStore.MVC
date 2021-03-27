@@ -10,6 +10,8 @@ namespace GeneralStore.MVC.Models
     {
         [Key]
         public int ProductId { get; set; }
+
+
         [Required]
         [Display(Name = "Product Name")]
         public string Name { get; set; }
@@ -21,6 +23,9 @@ namespace GeneralStore.MVC.Models
         [Required]
         [Display(Name = "It is food")]
         public bool IsFood { get; set; }
+
+        public virtual List<Transaction> Transactions { get; set; }
+
 
     }
 }

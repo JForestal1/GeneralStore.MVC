@@ -24,8 +24,10 @@ namespace GeneralStore.MVC.Models
         {
             get
             {
-                return FirstName + " " + LastName ;
+                return FirstName + " " + LastName;
             }
         }
-}
+
+        public virtual List<Transaction> Transactions { get; set; }
+    }
 }
